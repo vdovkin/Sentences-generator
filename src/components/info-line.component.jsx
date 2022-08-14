@@ -1,13 +1,12 @@
 import React from "react";
-import { Line, LineName } from "./info-line.styles";
+import { Line, LineName, LineValue } from "./info-line.styles";
 
-const InfoLine = ({ parametrs }) => {
-  const { Name, Value } = parametrs;
+const InfoLine = ({ name, value }) => {
   return (
     <Line>
-      <LineName>{Name}</LineName>
+      <LineName>{name}</LineName>
       <span> : </span>
-      <span>{Value}</span>
+      <LineValue>{value}</LineValue>
     </Line>
   );
 };
